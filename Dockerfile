@@ -6,6 +6,7 @@ RUN apt-get update \
 	&& apt-get install sudo vim git -y \
 	&& apt-get install build-essential autoconf valgrind -y \
 	&& apt-get install re2c bison -y \
+	&& apt-get install zlib1g-dev -y \
 	&& apt-get install libxml2-dev locales lcov -y \
 	&& apt-get install libsodium-dev libsodium18 -y
 
