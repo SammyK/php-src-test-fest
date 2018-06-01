@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    image: phptestfest:latest
+    build: .
+    volumes:
+      - ./docker-mount:/usr/src
+    ports:
+      - "8888:8888"
+    tty: true
